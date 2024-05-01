@@ -101,6 +101,7 @@ export default function App() {
             onChange={(e) => setSearch(e.target.value)}
             type="text"
             className="search-input"
+            data-testid="search-input"
             placeholder="Search"
           />
           <button className="search-btn">

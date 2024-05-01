@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import "../assets/css/upsert.css";
 import { v4 as getID } from "uuid";
@@ -39,13 +40,18 @@ export const UpsertNote = ({ setOpen, note, createNote, updateNote }) => {
     setOpen(false);
   };
 
-  console.log(title, desc);
   return (
     <div className="upsert-note">
       <div className="upsert-wrapper">
         <div className="upsert-header">
-          <h2 className="heading">{note ? "Update Note" : "Add Note"}</h2>
-          <div className="close-btn" onClick={() => setOpen(false)}>
+          <h2 className="heading" data-testid="upsert-heading">
+            {note ? "Update Note" : "Add Note"}
+          </h2>
+          <div
+            className="close-btn"
+            onClick={() => setOpen(false)}
+            data-testid="close-btn"
+          >
             <i className="fa-solid fa-xmark"></i>
           </div>
         </div>
@@ -56,20 +62,26 @@ export const UpsertNote = ({ setOpen, note, createNote, updateNote }) => {
             type="text"
             placeholder="Title"
             className="input-form"
+            data-testid="title-input"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
           <textarea
             className="textarea-form"
             placeholder="Enter your note"
+            data-testid="description-input"
             value={desc}
             onChange={(e) => setDesc(e.target.value)}
           ></textarea>
           <div className="upsert-actions">
-            <button className="clear-btn" onClick={handleClear}>
+            <button
+              className="clear-btn"
+              onClick={handleClear}
+              data-testid="clear-btn"
+            >
               Clear
             </button>
-            <button type="submit" className="save-btn">
+            <button type="submit" className="save-btn" data-testid="save-btn">
               Save
             </button>
           </div>
