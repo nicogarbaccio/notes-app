@@ -8,7 +8,7 @@ import { PaletteContext } from "./context/PaletteContext";
 
 const palettes = [
   { id: 1, color: "#0d1282", name: "blue-palette" },
-  { id: 2, color: "#ff2171", name: "rose-palette" },
+  { id: 2, color: "#15a015", name: "green-palette" },
   { id: 3, color: "#360d95", name: "violet-palette" },
   { id: 4, color: "#333", name: "black-palette" },
 ];
@@ -101,7 +101,7 @@ export default function App() {
             onChange={(e) => setSearch(e.target.value)}
             type="text"
             className="search-input"
-            data-testid="search-input"
+            data-testid="search"
             placeholder="Search"
           />
           <button className="search-btn">

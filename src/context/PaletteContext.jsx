@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { createContext, useReducer, useEffect } from "react";
 
 const initState = {
