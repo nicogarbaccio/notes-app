@@ -7,10 +7,10 @@ import { UpsertNote } from "./components/UpsertNote";
 import { PaletteContext } from "./context/PaletteContext";
 
 const palettes = [
-  { id: 1, color: "#0d1282", name: "blue-palette" },
-  { id: 2, color: "#15a015", name: "green-palette" },
-  { id: 3, color: "#360d95", name: "violet-palette" },
-  { id: 4, color: "#333", name: "black-palette" },
+  { id: 1, color: "#0B3142", name: "blue-palette" },
+  { id: 2, color: "#1C3A13", name: "green-palette" },
+  { id: 3, color: "#690500", name: "red-palette" },
+  { id: 4, color: "#252323", name: "black-palette" },
 ];
 
 export default function App() {

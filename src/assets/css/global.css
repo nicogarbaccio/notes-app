@@ -6,17 +6,18 @@
   }
   
   .blue-palette {
-    background-image: linear-gradient(to bottom, #0d1282, #0a6ebd);
+    background-color: #0B3142;
   }
   
   .green-palette {
-    background-image: linear-gradient(to bottom, #084d08, #15a015);
+    background-color: #1C3A13
   }
   
-  .violet-palette {
-    background-image: linear-gradient(to bottom, #360d95, #4e31aa);
+  .red-palette {
+    background-color: #690500;
   }
   
   .black-palette {
-    background-image: linear-gradient(to bottom, #333, #444);
+    /* background-image: linear-gradient(to bottom, #333, #444); */
+    background-color: #252323;
   }
